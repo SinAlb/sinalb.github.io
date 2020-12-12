@@ -1,0 +1,171 @@
+body {
+	font-family: 'Playfair Display SC', serif;
+}
+.header {
+	width:100%;
+	max-width: 1180px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;  /*чтобы расположить от края до края*/
+	align-items: center; /*чтобы слово-логотип было посередине (вертикально) относительно списков*/
+	padding-left: 15px;
+	padding-right: 15px; /*чтобы при адаптиве ничего не смещалось*/
+	padding-top: 20px;/* сверху чтобы не лепилась навигация и лого*/
+	box-sizing: border-box;
+}
+
+.wrap {
+	width:100%;
+	max-width: 1180px;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+	box-sizing: border-box;
+}
+
+.nav {
+	list-style-type: none; /*чтобы отключить буллеты*/
+	display: flex; /*чтобы навигация отражалась в одну линию (горизонтально)*/
+	justify-content: flex-start; /*чтобы навигация отражалась в одну линию (горизонтально)*/
+	align-items: center; /*текст пунктов навигации на уровне серединки кнопки */ 
+	font-size: 20px;
+}
+.nav>li {
+	 margin-left: 15px;  /*отделить пункты навигации друг от друга, чтобы они не слепливались вместе*/
+
+}
+.nav>li>a {
+	text-decoration: none; /*чтобы убрать нижнее подчеркивание на пунктах навигации изза гиперссылочности*/
+ 	color: black;
+ 	font-family: 'Cinzel', serif;
+	}
+.nav_btn {
+	background-color: #800053;
+	color: white;
+	border-radius: 5px; /*добавить закругления углов кнопки*/
+	padding: 10px 15px;
+	border: none; /*убрать границы у кнопки*/
+	font-family: 'Cinzel', serif;
+
+}
+.logo {
+	display: flex;
+	align-items: center; /*надпись лого_текст стало на уровне середины лого_имг, (в ряд)*/
+	text-decoration: none; /*чтобы убрать нижнее подчеркивание на лого_текст изза гиперссылочности*/
+}
+.logo_img {
+	display: block;
+	width:	80px;
+	height: 96px;
+
+	background-image: url("../image/дракон анфас.svg") /*какогото хрена только свджи появляется у меня*/
+
+}	 
+.logo_text {
+	font-family: 'Cinzel', serif;
+	margin-left: 5px;
+	font-size: 40px;
+	color: black;
+}	
+.title-main {
+	font-size: 100px;
+	font-family: 'Bitter', serif;
+}
+
+.text-main {
+	color: #C2C2C2;
+
+
+
+}
+.button {
+	/*margin-left: 350px;*/
+	margin: 0 auto;
+	display: block;
+	font-size: 40px;
+	background-color: #800053;
+	color: white;
+	border-radius: 5px; /*добавить закругления углов кнопки*/
+	padding: 20px 30px;
+	border: none; /*убрать границы у кнопки*/
+	font-family: 'Underdog', cursive;
+	
+
+}
+
+
+.page {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	position: relative;
+
+
+
+
+
+}
+.page_top {
+	border-top: 1px solid #C2C2C2;
+
+}
+.page h2 {
+	position: absolute;
+	font-size: 20px;
+	font-weight: 200;
+	background-color: white;
+	padding: 5px 15px;
+	top: -33px;
+	color: #C2C2C2;
+}
+
+.services {
+	display: grid;
+	grid-template: 50% 50% / 50% 50%;
+
+}
+.services h3 {
+	font-size: 30px;
+
+}
+.services p {
+	font-size: 20px;
+	color: #A5849A;
+}
+.services_item {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+
+}
+.services_img {
+	flex-basis: 120px;
+	margin-right: 20px;
+	text-align: center;
+
+}
+
+.services_text {
+	flex-basis: calc(100% - 120px);
+
+
+}
+.team {
+	display: grid;
+	grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+	grid-row-gap: 40px; /*отступы между ячейками */
+}
+.team-item {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.team-item img{
+	margin-right: 20px;
+	width: 100px;
+	height: 100px;
+}
+.team-item>div {
+ 	flex-basis: calc(100% - 100px);
+
+}

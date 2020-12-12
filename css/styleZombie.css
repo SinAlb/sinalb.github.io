@@ -1,0 +1,126 @@
+.header {
+	width:100%;
+	max-width: 1180px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;  /*чтобы расположить от края до края*/
+	align-items: center; /*чтобы слово-логотип было посередине (вертикально) относительно списков*/
+	padding-left: 15px;
+	padding-right: 15px; /*чтобы при адаптиве ничего не смещалось*/
+	padding-top: 20px;/* сверху чтобы не лепилась навигация и лого*/
+	box-sizing: border-box;
+}
+.nav {
+	list-style-type: none; /*чтобы отключить буллеты*/
+	display: flex; /*чтобы навигация отражалась в одну линию (горизонтально)*/
+	justify-content: flex-start; /*чтобы навигация отражалась в одну линию (горизонтально)*/
+	align-items: center; /*текст пунктов навигации на уровне серединки кнопки */ 
+	font-size: 20px;
+}
+.nav>li {
+	 margin-left: 15px;  /*отделить пункты навигации друг от друга, чтобы они не слепливались вместе*/
+
+}
+.nav>li>a {
+	text-decoration: none; /*чтобы убрать нижнее подчеркивание на пунктах навигации изза гиперссылочности*/
+ 	color: black;
+ 	font-family: 'Cinzel', serif;
+	}
+.nav_btn {
+	background-color: #800053;
+	color: white;
+	border-radius: 5px; /*добавить закругления углов кнопки*/
+	padding: 10px 15px;
+	border: none; /*убрать границы у кнопки*/
+	font-family: 'Cinzel', serif;
+
+}
+.logo {
+	display: flex;
+	align-items: center; /*надпись лого_текст стало на уровне середины лого_имг, (в ряд)*/
+	text-decoration: none; /*чтобы убрать нижнее подчеркивание на лого_текст изза гиперссылочности*/
+}
+.logo_img {
+	display: block;
+	width:	80px;
+	height: 96px;
+
+	background-image: url("../image/дракон анфас.svg") /*какогото хрена только свджи появляется у меня*/
+
+}	 
+.logo_text {
+	font-family: 'Cinzel', serif;
+	margin-left: 5px;
+	font-size: 40px;
+	color: black;
+}
+.intro {
+	margin: 0 auto;
+	margin-top: 20px;
+	background-attachment: fixed; 
+	width: 100%;
+	display: flex;
+	flex-direction: column; 
+	/*justify-content: space-between; */
+	padding-left: 15px;
+	padding-right: 15px;
+	text-shadow: 1px 1px 2px black, 0 0 1em white;
+	align-items: center;
+	height: 2000px;
+}
+.title-h1 {
+	font-size: 100px;
+	text-align: center;
+	font-family: 'Cormorant Unicase', serif;
+	color: white;
+}
+.title-h2 {
+	text-align: center;
+	font-family: 'IBM Plex Serif', serif;
+	color: white;
+	font-size: 40px;
+
+
+}
+.inputo {
+	font-family: 'Cormorant Unicase', serif;
+	text-align: center;
+	color: white;
+}
+
+.inputo input {
+	font-size: 20px;
+	padding: 10px;
+	margin: 20px 0;
+	border-radius: 10px;
+	border: 0;
+	box-shadow:3 45 15px 4px rgba(200,200,200,0.80);
+	background: white;
+	font-weight: bold;
+
+	
+}
+.inputo p {
+	font-size: 40px;
+	padding: 10px;
+	margin: 20px 0;
+		font-weight: bold;
+}
+select {
+  
+  padding:10px;
+  border-radius:10px;
+  font-size: 40px;
+}
+.inputo button {
+	/*margin-left: 350px;*/
+	margin-top: 100px;
+	/*display: block;*/
+	font-size: 40px;
+	background-color: #800053;
+	color: white;
+	border-radius: 5px; /*добавить закругления углов кнопки*/
+	padding: 20px 30px;
+	opacity: 70%;
+	border: none; /*убрать границы у кнопки*/
+	font-family: 'Cormorant Unicase', serif;
